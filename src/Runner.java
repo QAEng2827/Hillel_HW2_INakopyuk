@@ -1,4 +1,6 @@
 import java.sql.SQLOutput;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Runner {
 
@@ -11,6 +13,7 @@ use methods if variables are private.
     public static void main (String Arg[]){
 
        // Vehicle.move(); // если метод move сделать static
+        Vehicle vehicle=new Vehicle();
         RoadBicycle bicR= new RoadBicycle();
 
         MountainBicycle bicM = new MountainBicycle();
@@ -64,6 +67,7 @@ use methods if variables are private.
         System.out.println();
         System.out.println();
 
+       vehicle.move();
        bicR.move();
         System.out.println();
        bicM.move();
@@ -85,6 +89,62 @@ use methods if variables are private.
         System.out.println();
         System.out.println("New Seat Height is:" + bicM.getSeatHeight());
         System.out.println(" New Rudder Depth is:" + bicR.getRudderDepth());
+        System.out.println();
 
-    }
+        //Override hashCode() and equals() in Helicopter.
+        // Create few objects of Helicopter and compare them using ‘==’ and equals().
+        System.out.println("HELICOPTERS");
+
+        Helicopter helly1 = new Helicopter("HellyOld");
+        Helicopter helly2 = new Helicopter("HellyOld");
+        System.out.println(helly1.toString());
+        System.out.println(helly2.toString());
+        System.out.println();
+
+
+        System.out.println("Is Helli1 equals Helli2? " + helly2.equals(helly1));
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        Set helicopters = new HashSet();
+        helicopters.add(helly1);
+        helicopters.add(helly2);
+
+        System.out.println(helicopters);//  если имена одинаковые, то печатает одно
+
+        helly2.move();
+        helly1.move();
+
+
+
+
+        helly1.maxHeight = 1200;
+        helly1.tankSize =50;
+        helly1.amountOfPasangers =8;
+
+        helly2.maxHeight= 1200;
+        helly2.tankSize= 25;
+        helly2.amountOfPasangers=2;
+        System.out.println();
+
+
+
+
+
+//Task 5. Set some values to variables of Car. Print them out in console.
+
+        System.out.println("CARS");
+        Car car1= new Car();
+        Car car2= new Car();
+
+        car1.setCarBrend("Chevrolet Impala 1967");
+        System.out.println("CarType is: " +car1.getCarType());
+
+
+        car2.setCarBrend("Land Rover Discovery Sport");
+        System.out.println("CarType is: " +car2.getCarType());
+
+
+
+   }
 }
