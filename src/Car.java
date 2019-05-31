@@ -1,9 +1,22 @@
 public class Car extends Vehicle {
     static String carType;
     static String transmission;
+
+    public static String getTransmission() {
+        return transmission;
+    }
+
     String carBrend;
     Double engineSize;
 
+
+    public static void setCarType(String carType) {
+        Car.carType = carType;
+    }
+
+    public  void setTransmission(String transmission) {
+        Car.transmission = transmission;
+    }
 
     public  void setCarBrend(String value){
 

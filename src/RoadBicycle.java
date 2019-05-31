@@ -1,10 +1,15 @@
-public class RoadBicycle extends Bicycle  {
-    private int rudderDepth = 6;
+public class RoadBicycle extends Bicycle {
+    private int rudderDepth;
 
-    public void setRudderDepth(int value){
-        System.out.println("Rudder Depth is " + value);
-        rudderDepth = value;
+    public RoadBicycle(int id, int gear, int rudderDepth) {
+        super(id);
+        this.rudderDepth = rudderDepth;
+        this.gear = gear;
+        System.out.println("Road Bicycle  ID:" + id + " has " + gear + " gears" + " and  rudder depth: " + rudderDepth);
+    }
 
+    public void setRudderDepth(int value) {
+        this.rudderDepth = value;
     }
 
     public int getRudderDepth() {

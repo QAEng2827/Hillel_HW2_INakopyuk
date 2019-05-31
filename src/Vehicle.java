@@ -1,38 +1,46 @@
 public class Vehicle {
-    int speed = 2;
-    private String model = "Some model";
+    int speed;
+    private String model;
 
     public void speedUp(int value) {
 
-        System.out.println("You speed was increased to " + value);
+        speed=speed+value;
+
+        System.out.println("You speed "  + speed + "was increased to " + value);
     }
 
     public void applyBrake(int value) {
 
-        System.out.println(" Warning! After " + value + " minuts will be use Break. Please, speed down!");
+        speed = speed - value;
+
+        if (speed > 0) {
+
+            System.out.println("Speed decreased for " + value + " Current speed is " + speed + " km/h");
+        } else {
+            System.out.println("Vehicle was stopped");
+
+        }
 
     }
 
     public void setModel(String model) {
-        System.out.println("Wow! The model of you vehicle is: " + model);
-        ;
-
-
+       this.model=model;
     }
 
     public String getModel() {
         return model;
     }
 
-    public void move(){
-        System.out.println("Hi! It is move method from Vehicle");
+    public int move(){
+        System.out.println("Hi! It is move method from Vehicle class");
+        return  speed;
 
     }
 
 
 
     final void stop() {
-
+        applyBrake(speed);
         System.out.println("Stop it!");
     }
 
