@@ -110,11 +110,17 @@ use methods if variables are private.
     */
         System.out.println("HELICOPTERS");
 
+
         Helicopter helly1 = new Helicopter(8,1000, 20);
         Helicopter helly2 = new Helicopter(8,1000, 20);
         Helicopter helly3 = new Helicopter(4, 1500);
+//        System.out.println("helly1 hashCode is " + helly1.toString());
+//        System.out.println("helly2 hashCode is " + helly2.toString());
+//        System.out.println("helly3 hashCode is " + helly3.toString() + "\n");
+
         System.out.println(helly1.toString());
         System.out.println(helly2.toString());
+        System.out.println(helly3.toString());
         System.out.println();
 
         System.out.println("Compare Helicopter objects with == ");
@@ -135,6 +141,7 @@ use methods if variables are private.
         RoadBicycle bicR3= new RoadBicycle(27,12, 15);
         System.out.println(bicR1.toString());
         System.out.println(bicR2.toString());
+        System.out.println(bicR3.toString());
         System.out.println();
 
         System.out.println("Compare RoadBicycle objects with == ");

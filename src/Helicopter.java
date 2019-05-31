@@ -22,14 +22,13 @@ public class Helicopter extends Vehicle {
     }
 
     public int move(){
-
         System.out.println("It is move method from class Helicopter");
         return speed;
     }
 
     @Override
     public String toString() {
-        return "name=" + name+"#"+ Integer.toHexString(hashCode());
+        return "name=" + getClass().getName()+"#"+ Integer.toHexString(hashCode());
     }
 
 
