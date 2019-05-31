@@ -1,15 +1,17 @@
-public class Vehicle {
+public abstract class Vehicle {
     int speed;
     private String model;
 
-    public void speedUp(int value) {
+    public  void speedUp(int value)
+    {
 
         speed=speed+value;
 
         System.out.println("You speed "  + speed + "was increased to " + value);
     }
 
-    public void applyBrake(int value) {
+    public  void applyBrake(int value)
+    {
 
         speed = speed - value;
 
@@ -23,23 +25,26 @@ public class Vehicle {
 
     }
 
-    public void setModel(String model) {
+    public void setModel(String model)
+    {
        this.model=model;
     }
 
-    public String getModel() {
+    public   String getModel()
+    {
         return model;
     }
 
-    public int move(){
-        System.out.println("Hi! It is move method from Vehicle class");
-        return  speed;
+    public abstract int move();
+//    {
+//        System.out.println("Hi! It is move method from Vehicle class");
+//        return  speed;
+//
+//    }
 
-    }
 
 
-
-    final void stop() {
+    final  void stop() {
         applyBrake(speed);
         System.out.println("Stop it!");
     }

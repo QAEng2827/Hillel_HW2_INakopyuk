@@ -1,4 +1,4 @@
-public class Bicycle extends Vehicle {
+public abstract class Bicycle extends Vehicle {
 
     public final int id;
     protected int gear;
@@ -23,14 +23,16 @@ public class Bicycle extends Vehicle {
         this.id = id;
     }
 
-    public void changeGear(int value) {
-
-        this.gear = value;
-        System.out.println("The gear is  " + value);
-    }
+    public abstract void changeGear(int value);
+//    {
+//
+//        this.gear = value;
+//        System.out.println("The gear is  " + value);
+//    }
 
     @Override
-    public int move() {
+    public  int move()
+    {
         System.out.println("It is move method from class Bicycle");
         return speed;
 

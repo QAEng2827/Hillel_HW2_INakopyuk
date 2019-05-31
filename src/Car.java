@@ -1,4 +1,4 @@
-public class Car extends Vehicle {
+public abstract class Car extends Vehicle {
     static String carType;
     static String transmission;
 

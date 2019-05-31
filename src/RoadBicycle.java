@@ -15,4 +15,12 @@ public class RoadBicycle extends Bicycle {
     public int getRudderDepth() {
         return rudderDepth;
     }
+
+    @Override
+
+    public void changeGear(int value){
+
+        this.gear = value;
+//        System.out.println("The gear is  " + value);
+    }
 }

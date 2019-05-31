@@ -24,49 +24,6 @@ use methods if variables are private.
         System.out.println("Now rudder depth is: "+ bicR.getRudderDepth());
         bicR.changeGear(27);
 
-//         // Vehicle.move(); // если метод move сделать static
-//        Vehicle vehicle=new Vehicle();
-//
-//        // обращение к методам и переменным  класса Vеhicle
-//
-//        System.out.println("Road Bicycle speed is: " + bicR.speed);
-//        System.out.println();
-//
-//        System.out.println("Road Bicycle gear is: " + bicR.gear);
-//        System.out.println();
-
-
-//        bicM.speed = 10 ;
-//        bicR.speed = 30;
-//
-//        if (bicM.speed <=15) {
-//
-//            bicM.speedUp(bicM.speed);
-//        } else {
-//            bicM.applyBrake(bicM.speed);
-//        }
-//
-//        System.out.println();
-//
-//        if (bicR.speed <=15) {
-//
-//            bicR.speedUp(bicR.speed);
-//        } else {
-//            bicR.applyBrake(bicR.speed);
-//        }
-//
-//        System.out.println();
-//        System.out.println("Now speeds are: ");
-//        System.out.println("Mountain Bicycle is:  " + bicM.speed);
-//        System.out.println("Road Bicycle is:  " + bicR.speed);
-//        System.out.println();
-//
-//        System.out.println("You have " + bicM.getModel()+ " of mountain bicycle");
-//        System.out.println("You have " + bicR.getModel()+ " of road bicycle");
-
-//        bicM.setModel("TREK 820");
-//        bicR.setModel("Ardis");
-//        System.out.println();
 
         bicM.stop();
         bicR.stop();
@@ -83,7 +40,7 @@ use methods if variables are private.
         System.out.println();
        bicM.move();
         System.out.println();
-        Bicycle bic = new Bicycle(11, "Giant");
+       // Bicycle bic = new Bicycle(11, "Giant");
 
 // обращение к методам и переменным  класса Bicycle
 //
@@ -156,18 +113,18 @@ use methods if variables are private.
 //Task 5. Set some values to variables of Car. Print them out in console.
         System.out.println("----------------------------\n");
 
-        System.out.println("CARS");
-        Car car1= new Car();
-        Car car2= new Car();
-
-        car1.setCarBrend("Chevrolet Impala 1967");
-        System.out.println("CarType is: " +car1.getCarType());
-        car1.setTransmission("four");
-
-
-        car2.setCarBrend("Land Rover Discovery Sport");
-        System.out.println("CarType is: " +car2.getCarType());
-        car2.setTransmission("six");
+//        System.out.println("CARS");
+//        Car car1= new Car();
+//        Car car2= new Car();
+//
+//        car1.setCarBrend("Chevrolet Impala 1967");
+//        System.out.println("CarType is: " +car1.getCarType());
+//        car1.setTransmission("four");
+//
+//
+//        car2.setCarBrend("Land Rover Discovery Sport");
+//        System.out.println("CarType is: " +car2.getCarType());
+//        car2.setTransmission("six");
 
 
 

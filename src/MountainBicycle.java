@@ -16,4 +16,12 @@ public class MountainBicycle extends Bicycle {
     public int getSeatHeight() {
         return seatHeight;
     }
+
+    @Override
+
+    public void changeGear(int value){
+
+        this.gear = value;
+//        System.out.println("The gear is  " + value);
+    }
 }
